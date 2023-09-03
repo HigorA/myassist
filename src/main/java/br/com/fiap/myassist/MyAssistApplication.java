@@ -12,12 +12,6 @@ public class MyAssistApplication {
 		SpringApplication.run(MyAssistApplication.class, args);
 	}
 
-	@Bean
-	public FlywayMigrationStrategy repair() {
-		return flyway -> {
-			// repair each script checksum
-			flyway.repair();
-		};
-	}
+
 
 }
